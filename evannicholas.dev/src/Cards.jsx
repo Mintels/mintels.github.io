@@ -1,12 +1,11 @@
 import styles from './Cards.module.css';
-import leftArrow from './assets/leftArrow.svg';
-import rightArrow from './assets/rightArrow.svg';
+
 export default function Cards() {
     return (
         <div className={styles.cardsContainer}>
-            <img src={leftArrow} className={styles.arrow} alt="Right Arrow" />
+            <img src="https://via.placeholder.com/150" alt="Card 1" />
             <p> In Progress </p>
-            <img src={rightArrow} className={styles.arrow} alt="Left Arrow" />
+            <img src="https://via.placeholder.com/150" alt="Card 2" />
         </div>
 
     )
