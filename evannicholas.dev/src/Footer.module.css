@@ -14,8 +14,10 @@
 .socialIcon {
     width: 30px;
     height: 30px;
+    transition: transform 0.3s ease;
 }
 
 .socialIcon:hover {
     transform: translateY(-2px);
 }
+
