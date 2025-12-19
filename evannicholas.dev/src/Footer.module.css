@@ -1,0 +1,21 @@
+.socialMedia {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%); 
+
+    display: flex;
+    gap: 20px;
+
+    z-index: 1000;
+}
+
+.socialIcon {
+    width: 30px;
+    height: 30px;
+}
+
+.socialIcon:hover {
+    transform: translateY(-2px);
+}
