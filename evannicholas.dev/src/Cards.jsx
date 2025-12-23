@@ -28,7 +28,7 @@ export default function Cards() {
         {
             icon: DebateHubIcon,
             example: DebateHubExample,
-            title: "DebateHub",
+            title: "DebateHub - Articulation Trainer",
             description: "DebateHub is an online matchmaking platform that pairs users against each other to debate in a range of world affairs. Each debater receives an initial matchmaking rating (MMR), and after every debate they finish, their rating is either increased or reduced depending on how they explained and backed up their argument compared to the opposing debater.",
             timeframe: "Oct 2025 - Dec 2025",
             link: "https://github.com/debatesit/debatehub"
@@ -59,7 +59,7 @@ export default function Cards() {
         <div className={styles.cardsContainer}>
             <img
                 src={leftArrow}
-                className={styles.arrow}
+                className={`${styles.arrow} ${styles.left}`}
                 alt="Previous"
                 onClick={prevProject}
             />
@@ -88,7 +88,7 @@ export default function Cards() {
 
                 <img
                     src={rightArrow}
-                    className={styles.arrow}
+                    className={`${styles.arrow} ${styles.right}`}
                     alt="Next"
                     onClick={nextProject}
                 />
