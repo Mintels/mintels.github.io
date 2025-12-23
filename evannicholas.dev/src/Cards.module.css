@@ -3,6 +3,98 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 20px;
-    background: gray;
+    min-height: 100vh;
+}
+
+
+.card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    overflow-wrap: break-word; 
+    width: 50vw;
+    animation: cardReveal 0.8s ease-out forwards;
+}
+
+@keyframes cardReveal {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.arrow {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.arrow:hover {
+    transform: translateY(-3px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;        
+} 
+
+.cardIcon {
+    padding: 10px;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.cardTitle {
+    font-family: Poppins, sans-serif;
+    display: flex; 
+    align-items: center;
+}
+
+.cardDescription { 
+    font-family: Poppins, sans-serif;
+    padding: 10px;
+    color: #333333;
+}
+
+.cardTimeframe {
+    font-family: Poppins, sans-serif;
+    padding: 10px;
+    color: #666666;
+    font-size: 1.2rem;
+}
+
+.cardExample {
+
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 35vw; 
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #000000;
+}
+ 
+.cardLink {
+
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+    justify-content: center;
+    align-items: center;
+
+    color: #000000;
+    font-family: Poppins, sans-serif;
+    text-decoration: none;
+
+
+    padding: 10px;
+    border-radius: 15px;
+    background-color: rgb(240, 240, 240);
 }

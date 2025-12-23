@@ -1,7 +1,5 @@
 .hero {
-
     min-height: 100vh;
-    background-color: #f0f0f0;
 
     display: flex;
     flex-direction: column;
@@ -11,16 +9,40 @@
 
     font-family: poppins, sans-serif;
     color: #000000;
-
 }
-
 
 .heading {
     font-size: 4rem;
+    animation: slideFromRight 0.8s ease-out forwards;
+}
+
+@keyframes slideFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .subheading {
     font-size: 2rem;
+    animation: slideFromLeft 0.8s ease-out forwards;
+    animation-delay: 0.7s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes slideFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .highlight {
