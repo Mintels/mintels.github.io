@@ -56,7 +56,7 @@ export default function Cards() {
     };
 
     return (
-        <div className={styles.cardsContainer}>
+        <main className={styles.cardsContainer}>
             <img
                 src={leftArrow}
                 className={`${styles.arrow} ${styles.left}`}
@@ -92,6 +92,6 @@ export default function Cards() {
                     alt="Next"
                     onClick={nextProject}
                 />
-        </div>
+        </main>
     )
 }

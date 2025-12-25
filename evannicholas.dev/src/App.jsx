@@ -1,7 +1,6 @@
 import Front from './Front.jsx'
 import Footer from './Footer.jsx' 
 import Cards from './Cards.jsx'
-import styles from './App.module.css'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 function App() {
 
