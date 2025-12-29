@@ -11,11 +11,30 @@
     text-overflow: ellipsis;
 }
 
+.homeButton { 
+    position: fixed;
+    top: 2%; 
+    left: 2%;
+    width: 32px;
+    height: 32px;
+    padding: 10px;
+    border: 2px solid rgb(193, 193, 193);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; 
+    background: white;
+    transition: transform 0.2s ease;
+}
+
+.homeButton:hover { 
+    transform: translateY(-3px);
+}
+
 .card {
     height: 80vh;
     background-color: rgb(255, 255, 255);
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    border: 1px solid rgb(193, 193, 193);
     overflow-wrap: break-word; 
     width: 50vw;
     animation: cardReveal 0.8s ease-out forwards;
@@ -34,13 +53,26 @@
 }
 
 .arrow {
-    width: 5wv;
-    height: 5vh;
-    transition: transform 0.2s ease-in-out;
+    width: 4wv;
+    height: 9vh;
+    padding: 5px;
+    border: 2px solid rgb(193, 193, 193);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 30px; 
+    background: white;
+    transition: transform 0.2s ease;
+}
+
+.left {
+    margin-right: 15px; 
+}
+
+.right {
+    margin-left: 15px;
 }
 
 .arrow:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 .cardHeader {
@@ -110,33 +142,59 @@
 
     padding: 10px;
     border-radius: 15px;
+    border: 2px solid rgb(188, 188, 188);
     background-color: rgb(240, 240, 240);
+}
+
+.cardLink:hover {
+    background-color: rgb(210, 210, 210);
+    border: 2px solid gray;
 }
 
 
 @media (max-width: 600px) and (hover: none) and (pointer: coarse) {
-    .card {
-        width: 95vw;
-        height: 70vh;
-    }
 
-    .arrow {
-        position: fixed; 
-        top: 1vh;
-        width: 15vw;
-        height: 15vh;
-    }
+  .cardsContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+  }
 
-    .left {
-        left: 20vw;
-    }
+  .card {
+    width: 92vw;
+    max-height: 75svh;
+    overflow-y: auto;
+  }
 
-    .right {
-        right: 20vw;
-    }
+  .arrow {
+    position: fixed;
+    top: 76%;
+    width: 56px;
+    height: 56px;
+    padding: 8px;
+    z-index: 10;
 
-    .cardExample {
-        width: 80vw;
-        height: auto;
-    }
+    transform: none;
+    transition: none;
+  }
+
+  .left {
+    left: 12px;
+  }
+
+  .right {
+    right: 12px;
+  }
+
+  .cardExample {
+    width: 80vw;
+    height: auto;
+  }
+
+  .arrow:hover,
+  .homeButton:hover {
+    transform: none;
+  }
 }
+

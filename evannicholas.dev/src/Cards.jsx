@@ -1,5 +1,7 @@
 import styles from './Cards.module.css';
 
+import homeIcon from './assets/home.svg'
+
 import leftArrow from './assets/leftArrow.svg';
 import rightArrow from './assets/rightArrow.svg';
 
@@ -13,6 +15,8 @@ import DebateHubIcon from './assets/DebateHub.png';
 import DebateHubExample from './assets/DebateHubExample.png';
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 
 export default function Cards() {
 
@@ -57,6 +61,7 @@ export default function Cards() {
 
     return (
         <main className={styles.cardsContainer}>
+            <Link to="/"><img src={homeIcon} className={styles.homeButton}/></Link>
             <img
                 src={leftArrow}
                 className={`${styles.arrow} ${styles.left}`}
