@@ -164,15 +164,15 @@
   .card {
     width: 92vw;
     max-height: 75svh;
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 
   .arrow {
     position: fixed;
-    top: 76%;
+    top: 76.5%;
     width: 56px;
     height: 56px;
-    padding: 8px;
+    padding: 5px;
     z-index: 10;
 
     transform: none;
